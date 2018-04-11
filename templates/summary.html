@@ -1,12 +1,34 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<p>{{name}}</p>
-	<p>{{language}}</p>
-	<p>{{location}}</p>
-	<p>{{comments}}</p>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Dojo Survey - Summary</title>
+    </head>
+    <script>
+        
+
+    </script>
+    <body>
+        <div id="container">
+            <header class="header_footer">
+                <img src="{{ url_for('static', filename='Coding-Dojo-logo.png') }}">
+                <h1>Flask Assignment - Dojo Survey - Summary</h1>
+            </header>
+            <main>
+            	<div id="forms">
+	                <p>Your Name: {{name}}</p>
+					<p>Favorite Language: {{language}}</p>
+					<p>Location: {{location}}</p>
+					<p>Comments: {{comments}}</p>
+				</div>
+            </main>
+            <footer class="header_footer">
+                <h3>Katia Cavalcanti</h3>
+            </footer>
+        </div>
+    </body>
 </html>
