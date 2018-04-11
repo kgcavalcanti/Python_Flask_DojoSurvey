@@ -73,6 +73,10 @@ input, textarea, select {
     border-radius: 10px;
 }
 
+#button a {
+    text-decoration: none;
+}
+
 footer {
     text-align: right;
 }
