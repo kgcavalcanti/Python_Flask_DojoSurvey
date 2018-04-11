@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Dojo Survey</title>
+    </head>
+    <body>
+        <div id="container">
+            <header class="header_footer">
+                <img src="{{ url_for('static', filename='Coding-Dojo-logo.png') }}">
+                <h1>Flask Assingment - Dojo Survey</h1>
+            </header>
+            <main>
+                <form action="/submit" method="POST">
+                    <label for="name">Your Name: </label><input type="text" name="name">
+                    <label for="location">Location: </label><select name="location">
+                        <option value="Seattle">Seattle</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="New York">New York</option>
+                        <option value="Dallas">Dallas</option>
+                    </select>
+                        <label for="laguage">Favorite Language: </label><select name="language">             
+                        <option value="Python">Python</option>
+                        <option value="C#">C#</option>
+                        <option value=".Net">.Net</option>
+                        <option value="HTML/CSS">HTML/CSS</option>
+                    </select>
+                     <label for="comments">Comments (optional): </label> <textarea name="comments" cols="50" rows="5"></textarea>
+                    <input type="submit" value="submit">
+
+                </form>
+
+            </main>
+            <footer class="header_footer">
+                <h3>Katia Cavalcanti</h3>
+            </footer>
+        </div>
+    </body>
+</html>
