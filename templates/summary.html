@@ -19,13 +19,13 @@
                 <h1>Flask Assignment - Dojo Survey - Summary</h1>
             </header>
             <main>
-            	<div id="forms">
-	                <p>Your Name: {{name}}</p>
-					<p>Favorite Language: {{language}}</p>
-					<p>Location: {{location}}</p>
-					<p>Comments: {{comments}}</p>
+                <div id="forms">
+                    <p>Your Name: {{session['name']}}</p>
+                    <p>Favorite Language: {{session['language']}}</p>
+                    <p>Location: {{session['location']}}</p>
+                    <p>Comments: {{session['comments']}}</p>
                     <button id="button"><a href="/">Go Back</a></button>
-				</div>
+                </div>
             </main>
             <footer class="header_footer">
                 <h3>Katia Cavalcanti</h3>

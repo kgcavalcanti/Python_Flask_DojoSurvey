@@ -38,6 +38,13 @@
                          <div id='row'><label for="comments">Comments (optional): </label> <textarea name="comments" cols="50" rows="5"></textarea></div>
                         <input id="button" type="submit" value="Submit">
                     </form>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
                 </div>
             </main>
             <footer class="header_footer">
